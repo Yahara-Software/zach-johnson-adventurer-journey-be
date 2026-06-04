@@ -1,0 +1,24 @@
+{
+  "name": "zach-johnson-adventurer-journey-be",
+  "version": "1.0.0",
+  "description": "A program to help an adventurer determine the length of their upcoming journey",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yahara-Software/zach-johnson-adventurer-journey-be.git"
+  },
+  "author": "Zach Johnson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yahara-Software/zach-johnson-adventurer-journey-be/issues"
+  },
+  "homepage": "https://github.com/Yahara-Software/zach-johnson-adventurer-journey-be#readme",
+  "devDependencies": {
+    "prettier": "3.8.3"
+  }
+}

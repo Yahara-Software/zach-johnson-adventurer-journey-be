@@ -85,7 +85,7 @@ export class Journey {
 					`Distance value '${moveTuple[0]}' could not be parsed as a number.`
 				);
 			}
-      // Should be impossible since we only split on valid keys but kept it here defensively.
+			// Should be impossible since we only split on valid keys but kept it here defensively.
 			if (!(moveTuple[1] in DIRECTIONS)) {
 				throw new Error(
 					`Direction '${moveTuple[1]}' is not a valid movement direction.`

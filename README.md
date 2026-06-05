@@ -22,3 +22,22 @@ Given the Path Instructions above, programmatically parse the instructions and d
 - Provide any needed instructions to run program.
 - Do not round to the nearest step.
 - After program executes the answer should be returned.
+
+## Implementation Info
+
+The solution is implemented as a NodeJS CLI with no external dependencies.
+
+### Prerequisites
+
+The following prerequisites are required:
+
+- NodeJS 12.17+
+
+### Setup and Deploy
+
+Once you have NodeJS installed, simply run `npm run start` or `node index.js` to start the CLI.
+
+### All NPM Scripts
+
+- `npm run start` - Start the application CLI.
+- `npm run test` - Run the unit test suites.

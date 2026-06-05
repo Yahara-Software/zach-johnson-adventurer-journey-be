@@ -41,7 +41,7 @@ function assertError(expectedMessage, testFn, testName = "") {
  * Run tests related to the `Journey` class.
  */
 function runJourneyTests() {
-  console.log('\nJourney Tests\n');
+	console.log("\nJourney Tests\n");
 	// Main example
 	{
 		const journeyString = "15F6B6B5L16R8B16F20L6F13F11R";
@@ -83,7 +83,7 @@ function runJourneyTests() {
  * Run tests related to the CLI.
  */
 function runCLITests() {
-  console.log('\nCLI Tests\n');
+	console.log("\nCLI Tests\n");
 	// Main example
 	{
 		const journeyString = "15F6B6B5L16R8B16F20L6F13F11R";

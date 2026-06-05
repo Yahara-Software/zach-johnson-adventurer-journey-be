@@ -41,6 +41,14 @@ function assertError(expectedMessage, testFn, testName = "") {
  * Run tests related to the `Journey` class.
  */
 function runJourneyTests() {
+  console.log('\nJourney Tests\n');
+	// Main example
+	{
+		const journeyString = "15F6B6B5L16R8B16F20L6F13F11R";
+		const journey = Journey.from(journeyString);
+		assertEqual(Math.sqrt(904), journey.euclideanDistance(), "Main example");
+	}
+
 	// No duplicates
 	{
 		const journeyString = "1F2B2R4L";
@@ -75,6 +83,17 @@ function runJourneyTests() {
  * Run tests related to the CLI.
  */
 function runCLITests() {
+  console.log('\nCLI Tests\n');
+	// Main example
+	{
+		const journeyString = "15F6B6B5L16R8B16F20L6F13F11R";
+		assertEqual(
+			`The distance to your destination is ${Math.sqrt(904)}. Best get walking!`,
+			getJourneyAnswer(journeyString),
+			"Main example"
+		);
+	}
+
 	// Short journey
 	{
 		const journeyString = "1F2B2R4L";

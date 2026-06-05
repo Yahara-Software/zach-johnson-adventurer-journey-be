@@ -1,6 +1,12 @@
 import { Journey } from "./journey.js";
+import { getJourneyAnswer } from "./cli.js";
 
-// TODO: implement CLI
+import readline from "readline";
 
-const journey = Journey.from("10F11B");
-console.log(journey.euclideanDistance());
+const cli = readline.createInterface(process.stdin, process.stdout);
+
+// Prompt the user to provide the journey string.
+cli.question("What is the path to the destination?\n", (response) => {
+	console.log(getJourneyAnswer(response));
+	process.exit();
+});
